@@ -1,0 +1,12 @@
+doctype html
+html
+	head
+		base(href='/')
+		title isomorphic-webapp
+		link(rel='icon',href='static/favicon.ico')
+	body
+		div#section
+		script(src='static/polyfill.min.js')
+		script(src='bundle.js')
+		if DEBUG
+			script(src='reload/reload.js')
